@@ -17,10 +17,18 @@ module.exports = {
         res.json({ message: "\nSuccess", data: cake_array });
       }
     });
+
+
+    // Cake.create({_id:1, name: "johnny", imgurl:"https://pantograph0.goldbely.com/s410/uploads/product_image/image/30382/award-winning-bees-knees-ice-cream-cake.39f5a30e50e0b3789cc43775b912d885.jpg"}, function(err, back){
+    // if (err) console.log('error couldnt save to mongoose', back);
+    // });
+    
+
   },
 
   //Retrieve 1 (by task id)
   retrieveOne: function(req, res) {
+      console.log('entering cakeController to send 1 cake back')
     Cake.findOne({ _id: req.params.id }, function(err, cake) {
       if (err) {
         console.log("\nerr getting back one from server", err);

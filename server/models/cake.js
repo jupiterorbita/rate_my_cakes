@@ -1,13 +1,12 @@
 const mongoose = require("mongoose");
-const Rate = mongoose.model("Rate");
-
+var RateSchema = require('./rate');
 console.log('SERVER > MODELS > cake.js');
 
 
 var CakeSchema = new mongoose.Schema({
   name: {type: String},
   imgurl: {type: String, default: ""},
-  rating: [Rate]
+  rating: [RateSchema]
  },
   { timestamps: true }
 );

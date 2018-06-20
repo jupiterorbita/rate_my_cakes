@@ -11,3 +11,5 @@ var RateSchema = new mongoose.Schema({
 );
 
 mongoose.model('Rate', RateSchema); //we are setting this schema in our models as Task
+
+module.exports = RateSchema;
