@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 
 console.log('SERVER > MODELS > rate.js');
 
-
 var RateSchema = new mongoose.Schema({
   rating: {type: Number},
   comment: {type: String, default: ""},

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-var RateSchema = require('./rate');
+var RateSchema = require('./rate.js');
 console.log('SERVER > MODELS > cake.js');
 
 

@@ -10,9 +10,9 @@ module.exports = function(app){
     //Create
     app.post('/create', cakeController.create);
 
-    app.post('/comment', cakeController.comment);
-    //Update
-    // app.put('/update/:id', cakeController.update_task)
+    // app.post('/comment', cakeController.comment);
+    //Update (in this case )
+    app.put('/update/:id', cakeController.comment)
     //Delete
     // app.delete('/delete/:id', cakeController.destroy_task)
 }

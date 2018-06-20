@@ -14,8 +14,3 @@ app.use(express.static( __dirname + '/public/dist/public' ));
 require("./server/config/mongoose.js")
 
 require('./server/config/routes.js')(app);
-
-
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/rate_cakes_db');
-// mongoose.Promise = global.Promise;
